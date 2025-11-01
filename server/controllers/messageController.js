@@ -110,9 +110,11 @@ export const textResponse = async(req,res)=>{
     try {
          const publishedImageMessages = await Chat.aggregate([
         {$unwind : "$messages"},
-        {
-           '$messages.isImage' : true,
-           '$messages.isPublished' : true
+        { 
+            $match:{
+           'messages.isImage' : true,
+           'messages.isPublished' : true
+        }
         }, 
         {
             $project : {

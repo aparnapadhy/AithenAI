@@ -42,7 +42,7 @@ export const loginUser = async(req , res)=>{
 
              if(isMatch){
                 const token = generateToken(user._id);
-                res.json({success:true, token})
+                return res.json({success:true, token})
              }
         }
        
