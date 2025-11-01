@@ -13,7 +13,7 @@ const app = express();
 await connectDB();
 
 //Stripe webhooks
-app.post('/app/stripe',express.raw({type: 'application/json'}),stripeWebhooks);
+app.post('/api/stripe',express.raw({type: 'application/json'}),stripeWebhooks);
 
 //middlewares
 app.use(cors());
