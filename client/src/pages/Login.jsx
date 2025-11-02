@@ -41,7 +41,7 @@ const Login = () => {
             {state === "register" && (
                 <div className="w-full">
                     <p>Name</p>
-                    <input onChange={(e) => setName(e.target.value)} value={name} placeholder="type here" className="border border-gray-200 rounded w-full p-2 mt-1 outline-indigo-500" type="text" required />
+                    <input onChange={(e) => setName(e.target.value)} value={name} placeholder="type here" className="border border-gray-200 rounded w-full p-2 mt-1 outline-[#34D399]" type="text" required />
                 </div>
             )}
             <div className="w-full ">
@@ -54,7 +54,7 @@ const Login = () => {
             </div>
             {state === "register" ? (
                 <p>
-                    Already have account? <span onClick={() => setState("login")} className="text-indigo-500 cursor-pointer">click here</span>
+                    Already have account? <span onClick={() => setState("login")} className="text-[#10B981] cursor-pointer">click here</span>
                 </p>
             ) : (
                 <p>
