@@ -33,8 +33,8 @@ const Community = () => {
   }
 
   return (
-    <div className='p-6 pt-12 xl:px-12 2xl:px-20 w-full mx-auto h-full overflow-y-scroll'>
-       <h2 className='text-3xl font-semibold mb-6 text-center sm:text-start text-gray-800 dark:text-white '>Community Images</h2>
+    <div className='p-6 pt-12 xl:px-12 2xl:px-20 w-full mx-auto h-full overflow-y-scroll '>
+       <h2 className='text-3xl font-semibold mb-6 text-center sm:text-start text-gray-800 dark:text-white mt-8 sm:mt-0'>Community Images</h2>
           {images.length > 0 ? (
             <div className='flex flex-wrap max-sm:justify-center gap-5'>
               {images.map((item,index)=>(
