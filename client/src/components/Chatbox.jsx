@@ -94,7 +94,7 @@ const Chatbox = () => {
         mode === 'image' && (
           <label className='inline-flex items-center gap-2 mb-3 text-sm mx-auto'>
             <p className='text-xs'>Publish Generated Image to Community</p>
-            <input type="checkbox" className='cursor-pointer' onChange={(e) => { setIsPublished(e.target.checked) }} checked={isPublished} />
+            <input type="checkbox" className='cursor-pointer accent-gray-500' onChange={(e) => { setIsPublished(e.target.checked) }} checked={isPublished} />
           </label>
         )
       }
