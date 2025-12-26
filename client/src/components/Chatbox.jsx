@@ -102,12 +102,12 @@ const Chatbox = () => {
 
       {/*Prompt Input box*/}
       <form onSubmit={onSubmit} className='bg-[#D1FAE5]/10 dark:bg-[#065F46]/50 border border-[#10B981]/50 dark:border-[#065F46] rounded-full w-full max-w-2xl p-3 pl-4 mx-auto flex gap-4 items-center'>
-        <select onChange={(e) => { setMode(e.target.value) }} value={mode} className='text-sm pl-2 pr-2 outline-none cursor-pointer'>
+        <select onChange={e => { setMode(e.target.value) }} value={mode} className='text-sm pl-2 pr-2 outline-none cursor-pointer'>
           <option className="dark:text-gray-500" value="text">Text</option>
           <option className="dark:text-gray-500" value="image">Image</option>
         </select>
 
-        <input onChange={(e) => { setPrompt(e.target.value) }} value={prompt} type="text" placeholder='Type your prompt here...' className='flex-1 w-full text-sm outline-none dark:placeholder:text-white' required />
+        <input onChange={e => { setPrompt(e.target.value) }} value={prompt} type="text" placeholder='Type your prompt here...' className='flex-1 w-full text-sm outline-none dark:placeholder:text-white' required />
 
         <button disabled={loading}>
           <img src={loading ? assets.stop_icon : assets.send_icon} alt="" className='w-8 cursor-pointer' />
