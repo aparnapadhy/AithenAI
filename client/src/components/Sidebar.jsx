@@ -44,7 +44,7 @@ const Sidebar = ({ isMenuOpen, setIsMenuOpen }) => {
       <div className='flex'>
       <img src={theme == 'dark' ? assets.logo_dark : assets.logo} alt="" className=' max-w-16' />
       <div className='ml-2 flex flex-col translate-y-3 -translate-x-0.5 -space-y-1'>
-         <div className='text-[#0E9F75] dark:text-[#10B981] text-2xl'>Aithen AI</div>
+         <div className='text-[#0E9F75] dark:text-[#10B981] text-2xl'>AithenAI</div>
          <div className='text-gray-500 dark:text-gray-300 text-sm'>Your Ideas, Amplified</div>
       </div>
       </div>
