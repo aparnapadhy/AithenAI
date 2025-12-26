@@ -39,6 +39,7 @@ const Chatbox = () => {
         } else {
           setUser(prev => ({ ...prev, credits: prev.credits - 1 }))
         }
+        setPrompt('');
       } else {
         toast.error(data.message);
         setPrompt(promptCopy);
@@ -46,7 +47,6 @@ const Chatbox = () => {
     } catch (error) {
       toast.error(error.message);
     } finally {
-      setPrompt('');
       setLoading(false);
     }
   }
@@ -61,7 +61,7 @@ const Chatbox = () => {
     if (containerRef.current) {
       containerRef.current.scrollTo({
         top: containerRef.current.scrollHeight,
-        behaviour: "smooth",
+        behavior: "smooth",
       })
     }
   }, [messages])
